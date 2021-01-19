@@ -15,7 +15,7 @@
 ARG BEETLE_PHP_VERSION
 ARG BEETLE_PHP_TAG
 
-FROM registry.cn-beijing.aliyuncs.com/vm-beetle/php-fpm-${BEETLE_PHP_VERSION}:${BEETLE_PHP_TAG}
+FROM registry.cn-beijing.aliyuncs.com/vm-beetle/php-fpm${BEETLE_PHP_VERSION}:${BEETLE_PHP_TAG}
 
 LABEL maintainer="zeni18"
 
