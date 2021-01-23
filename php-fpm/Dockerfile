@@ -57,6 +57,7 @@ RUN set -xe; \
   else \
   docker-php-ext-configure zip --with-libzip; \
   fi && \
+  php -r "readfile('http://getcomposer.org/installer');" | php -- --install-dir=/usr/bin/ --filename=composer  && \
   # Install the zip extension
   docker-php-ext-install zip && \
   php -m | grep -q 'zip'
